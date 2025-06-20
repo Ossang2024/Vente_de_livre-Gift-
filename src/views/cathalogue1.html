@@ -1,0 +1,258 @@
+<!-- ce cathalogue est la rbrique des produits informatiques -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon (13).ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/cathalogue1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Gift Marcket - cathalogue(Informatique)</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../assets/FB_IMG_1749970934301.jpg" alt="logos"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="aa actif-page">Cathalogue</a></li>
+                <li><a href="#" class="aa" onclick="event.preventDefault();">mon compte</a></li>
+                <li><a href="contact.html" class="aa">contact</a></li>
+                <li><a href="#" class="panier toggleCartBtn"> <span class="total-panier">0,00 FCFA</span> <i class="fas fa-shopping-cart"></i> </a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="num-panier"><p>0</p></div>
+    </header>
+
+
+    <!-- menu déroulant du responsive -->
+    <nav class="navi" id="navMenu">
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li class="accordion">
+                    <a href="#" onclick="toggleSubMenu(event)">Cathalogue</a>
+                    <ul class="submenu">
+                        <li><a href="#">Informatique</a></li>
+                        <li><a href="electricite.html">Électricité</a></li>
+                        <li><a href="entreprenariat.html">Entrepreneuriat</a></li>
+                        <li><a href="marcketing.html">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    <section class="background-slider">
+        <div class="all">
+            <div class="content">
+                <h1>Prenez le contrôle de votre carrière avec nos livres tech.</h1>
+                <div class="type">
+                    <div class="typewriter-container" id="typewriter"></div>
+                    <p>grace à nos livres</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="boutique ">
+        <div class="head">
+            <div class="header">
+                <h1 class="boutique-title">Nos livres informatique</h1>
+                <div class="boutique-slogan">
+                    <div></div>
+                    <p>Devenez un pro de la tech</p>
+                </div>
+            </div>
+            <div class="choix-rubrique">
+                <select onchange="window.location.href=this.value">
+                    <option disabled selected>Rubrique informatique</option>
+                    <option value="marcketing.html"><a href="#">Rubrique Macketing</a></option>
+                    <option value="entreprenariat.html"><a href="#">Rubrique entreprenariat </a></option>
+                    <option value="electricite.html"><a href="#">Rubrique d'electricité</a></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="recherche">
+            <input type="text" id="searchInput" placeholder="  Rechercher un livre..." />
+        </div>
+
+        <div class="boutique-cart" >
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Cyber-Sécurité</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>developpement</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Infographie</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Maintenance informatique</h2>
+                <s class="barr">8,000 CFA </s>
+                <p class="prix">6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="../assets/dev-web.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+        </div>
+
+
+        <!-- pagination d'orientation vers les autres pages -->
+        <div class="pagination">
+            <a href="#" class="prev" onclick="event.preventDefault();">&laquo;</a>
+            <a href="#" class="page active" onclick="event.preventDefault();">1</a>
+            <a href="electricite.html" class="page">2</a>
+            <a href="marcketing.html" class="page">3</a>
+            <a href="entreprenariat.html" class="page">4</a>
+            <a href="#" class="next" onclick="event.preventDefault();">&raquo;</a>
+        </div>
+    </div>
+
+    <div class="num-panier2"><p>0</p></div>
+    <a href="#" onclick="event.preventDefault();">
+        <div class="achat toggleCartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </a>
+
+
+
+    <footer>
+        <div class="flou">
+            <div class="content">
+                <a href="#"><img src="../assets/FB_IMG_1749970979564.jpg" alt="" class="logo"></a>
+                <p>Explorez notre sélection de produits numériques de haute qualité. Boostez votre créativité avec nos contenus digitaux. Votre succès commence ici.</p>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">polique de cookies</a></li>
+                    <li><a href="#">politique de confidentialité</a></li>
+                    <li><a href="#">Condistion générale de vente </a></li>
+                    <li><a href="#">politique de rembourssement</a></li>
+                    <li><a href="#">à propos</a></li>
+                </ul>
+                <div class="elements">
+                    <div class="imgs">
+                        <img src="../assets/Orange.png" alt="">
+                        <img src="../assets/MTN.png" alt="">
+                        <img src="../assets/MasterCard.png" alt="">
+                        <img src="../assets/Visa.png" alt="">
+                        <img src="../assets/Wave.png" alt="">
+                        <img src="../assets/Moov.png" alt="">
+                    </div>
+                    <p>copiright © 2025-2026 <strong>Gift Market place</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cartContainer">
+        <h2><i class="fas fa-shopping-bag"></i> Mon Panier</h2>
+        <ul id="cart"></ul>
+        <p id="total"></p>
+        <p class="payer"><a href="#" onclick="event.preventDefault();">Payer maintenant</a></p>
+        <!-- <div class="div toggleCartBtn"></div> -->
+    </div>
+
+
+
+
+
+    <!-- modal container -->
+     <div class="modal-overlay" id="modal-overlay" ></div>
+     <div class="modal-container" id="modal-container">
+        <h1>Formation en micrisoft-365</h1>
+        <div class="image-cart">
+            <img src="../assets/dev-web.jpeg" alt="vue avant du livre">
+            <img src="../assets/dev-web.jpeg" alt="vue arriere du livre">
+        </div>
+        <h2>Ce que vous béneficiez en choisissannt ce livre </h2>
+        <p><strong>Une formation de qualité :</strong> Ce livre est constitué de 12 chapritres indépendants qui te permettrons de de boostez tes compentences dans l'utilisation des technologies office 365.
+        Ce livre vous fournit une formation progréssive et complète allant de d'un niveau zéro, Avec ce livre vous avez acces à tout les sécrets d'office 365, au ressorti de cette formation, la burreautique n'aurra plus de secrets pour vous </p>
+        <p><strong>Pourquoi suivre une formation en Office 365 :</strong> En suivant cette formation, vous avez un atout solide pour offre d'mploie du spectre de la burreaucratie.
+        Et vous detenez entre les mains un un appuis solide pour vous faire recruter, Avec ce livre vous avez acces à tout les sécrets d'office 365, au ressorti de cette formation, la burreautique n'aurra plus de secrets pour vous </p>
+        <p><strong>Prix compétitif</strong> Obtenez une formation de qualité en Office 365 à 600 FCFA, un prix bien inférieur à ceux de nos concurrant. Une occasion exceptionnelle à ne pas manquer pour économiser tout en accédant à la meilleur qualités de formation Office 365  </p>
+        <p class="buy-button" onclick="addToCart('Livre Office 365 Pro', 5500)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+    </div>
+    <script src="../scripts/animation-text.js"></script>
+</body>
+</html>
+    
+
+
+

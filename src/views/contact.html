@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon (13).ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Gift Marcket - Contact</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="../assets/FB_IMG_1749970934301.jpg" alt="logos"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../views/cathalogue1.html" class="aa">Cathalogue</a></li>
+                <li><a href="#" class="aa">mon compte</a></li>
+                <li><a href="#" class="aa active">contact</a></li>
+                <li><a href="#" class="panier toggleCartBtn"> <span class="total-panier">0,00 FCFA</span> <i class="fas fa-shopping-cart"></i> </a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="num-panier"><p>0</p></div>
+    </header>
+
+
+    <div class="section1">
+        <div class="flou">
+            <div class="content">
+                <h1><i class="fa-solid fa-phone-volume"></i> <br> Contactez-nous</h1>
+                <p>Nous restons à votre diposition pour répondre à tout vos besoins et préoccupation.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <nav class="navi" id="navMenu">
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li class="accordion">
+                    <a href="#" onclick="toggleSubMenu(event)">Cathalogue</a>
+                    <ul class="submenu">
+                        <li><a href="cathalogue1.html">Informatique</a></li>
+                        <li><a href="electricite.html">Électricité</a></li>
+                        <li><a href="entreprenariat.html">Entrepreneuriat</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="contact">
+        <form action="#">
+            <input type="text" class="txt" placeholder="Nom & prénoms">
+            <input type="email" class="txt" placeholder="E-mail">
+            <input type="text" placeholder="Sujet de contact"> <br>
+            <textarea name="message" id="message" placeholder="Message"> </textarea>
+            <button class="submit">Envoyer mon méssage</button>
+        </form>
+    </div>
+
+
+    <div class="assistance">
+        <div class="wa-me">
+            <a href="#" onclick="event.preventDefault();"> <img src="../assets/fac.jpg" alt=""></a>
+            <a href="#" onclick="event.preventDefault();"> <img src="../assets/mee.jpg" alt=""></a>
+        </div>
+        <img src="../assets/wa-me.jpeg" alt="" class="img-wa-me" title="Assistance">
+    </div>
+
+
+    <div class="num-panier2"><p>0</p></div>
+    <a href="#" onclick="event.preventDefault();">
+        <div class="achat toggleCartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </a>
+
+    <footer>
+        <div class="flou">
+            <div class="content">
+                <a href="../../index.html"><img src="../assets/FB_IMG_1749970979564.jpg" alt="" class="logo"></a>
+                <p>Explorez notre sélection de produits numériques de haute qualité. Boostez votre créativité avec nos contenus digitaux. Votre succès commence ici.</p>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">polique de cookies</a></li>
+                    <li><a href="#">politique de confidentialité</a></li>
+                    <li><a href="#">Condistion générale de vente </a></li>
+                    <li><a href="#">politique de rembourssement</a></li>
+                    <li><a href="#">à propos</a></li>
+                </ul>
+                <div class="elements">
+                    <div class="imgs">
+                        <img src="src/assets/Orange.png" alt="">
+                        <img src="src/assets/MTN.png" alt="">
+                        <img src="src/assets/MasterCard.png" alt="">
+                        <img src="src/assets/Visa.png" alt="">
+                        <img src="src/assets/Wave.png" alt="">
+                        <img src="src/assets/Moov.png" alt="">
+                    </div>
+                    <p>copiright © 2025-2026 <strong>Gift Market place</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cartContainer">
+        <h2><i class="fas fa-shopping-bag"></i> Mon Panier</h2>
+        <ul id="cart"></ul>
+        <p id="total"></p>
+        <p class="payer"><a href="#" onclick="event.preventDefault();">Payer maintenant</a></p>
+        <!-- <div class="div toggleCartBtn"></div> -->
+    </div>
+    <script src="../scripts/animation-text.js"></script>
+
+</body>
+</html>

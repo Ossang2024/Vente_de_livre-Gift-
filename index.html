@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/favicon (13).ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Gift Macket - Acceuil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="src/assets/FB_IMG_1749970934301.jpg" alt="logos"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="src/views/cathalogue1.html" class="aa">Cathalogue</a></li>
+                <li><a href="#" class="aa">mon compte</a></li>
+                <li><a href="src/views/contact.html" class="aa">contact</a></li>
+                <li><a href="#" class="panier toggleCartBtn"> <span class="total-panier">0,00 FCFA</span> <i class="fas fa-shopping-cart"></i> </a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="num-panier"><p>0</p></div>
+    </header>
+
+
+    <!-- menu déroulant du responsive -->
+    <nav class="navi" id="navMenu">
+            <ul>
+                <li><a href="#" onclick="event.preventDefault();">Accueil</a></li>
+                <li class="accordion">
+                    <a href="#" onclick="toggleSubMenu(event)">Cathalogue</a>
+                    <ul class="submenu">
+                        <li><a href="src/views/cathalogue1.html">Informatique</a></li>
+                        <li><a href="src/views/electricite.html">Électricité</a></li>
+                        <li><a href="src/views/entreprenariat.html">Entrepreneuriat</a></li>
+                        <li><a href="src/views/marcketing.html">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="src/views/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    <section class="background-slider">
+        <div class="all">
+            <div class="content">
+                <h1>Le savoir, c’est le plus beau cadeau, formez-vous aujourd’hui pour réussir demain.</h1>
+                <div class="typewriter-container" id="typewriter"></div>
+                <p>Découvrez notre sélection exclusive de formations et de produits numériques de haute qualité pour stimuler votre créativité avec Gift Macket Place.</p>
+                <p> <a href="src/views/cathalogue1.html" class="store-link">Découvrez nos produits <i class="fas fa-book"></i></a> </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-cart">
+            <h1> <i class="fas fa-award"></i> <br> Qualité Exceptionnelle</h1>
+            <p>Nos livres de formations sont conçus avec le plus grand soin pour offrir une qualité exceptionnelle, garantissant ainsi que vous disposez des meilleures ressources pour vos projets créatifs.</p>
+        </div>
+
+        <div class="service-cart">
+            <h1> <i class="fas fa-mouse-pointer"></i> <br> Facilité d'Utilisation</h1>
+            <p>Explorez et profitez de nos contenus numériques avec une grande simplicité, même si vous êtes débutant, pour débloquer tout leur incroyable potentiel et enrichir votre expérience en ligne.</p>
+        </div>
+
+        <div class="service-cart">
+            <h1> <i class="fas fa-unlock-alt"></i> <br> Accès Facile à l'Éducation</h1>
+            <p>Nos produits offrent un accès facile à l'éducation en ligne, même dans des environnements à bande passante limitée, rendant l'apprentissage accessible à tous en Afrique.</p>
+        </div>
+    </section>
+
+
+    <div class="avantages-chiffre">
+        <div class="avis">
+            <h1>100%</h1>
+            <p>Mode de paiement sûr</p>
+        </div>
+        <div class="avis">
+            <h1>90%</h1>
+            <p>Avis positifs</p>
+        </div>
+        <div class="avis">
+            <h1>100%</h1>
+            <p>Accès illimité et à vie</p>
+        </div>
+    </div>
+
+
+    <section class="mode-payements">
+        <div class="money">
+            <div class="blured">
+                <div class="money-color">
+                    <h1>Modes de paiement</h1>
+                    <div class="payments">
+                        <img src="src/assets/Orange.png" alt="">
+                        <img src="src/assets/MTN.png" alt="">
+                        <img src="src/assets/MasterCard.png" alt="">
+                        <img src="src/assets/Visa.png" alt="">
+                        <img src="src/assets/Wave.png" alt="">
+                        <img src="src/assets/Moov.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="boutique">
+        <h1 class="boutique-title">Nos produits les plus populaires</h1>
+        <div class="boutique-slogan">
+            <div></div>
+            <p>Découvrez des opportunités d'apprentissage exceptionnelles.</p>
+        </div>
+        <div class="boutique-cart">
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Formation en micrisoft-365', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();"> <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+            <div class="cart">
+                <a href="#" onclick="event.preventDefault();" > <img src="src/assets/img_3535.jpeg" alt="produit" class="modal-toggleCartBtn"> </a>
+                <h2>Formation en micrisoft-365</h2>
+                <s class="barr">8,000 CFA </s>
+                <p>6,000 CFA</p>
+                <p class="buy-button" onclick="addToCart('Livre JavaScript Pro', 6000)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+            </div>
+        </div>
+        <p class="voire"> <a href="src/views/cathalogue1.html">Voire tout nos produits numériques</a> </p>
+    </section>
+
+    <div class="slider-container">
+        <div class="div">
+            <h1 class="slider-title"><i class="fa-solid fa-comments"></i> <br> Les témoignages de nos clients</h1>
+            <p>Découvrez ce que nos clients satisfaits ont à dire au sujet de leur expérience avec Digital Commerce Place.</p>
+        </div>
+        <div class="slider-track" id="slider">
+            <div class="slide">
+                <p>"Gift Market m’a permis de trouver les bons livres pour réussir mes concours."</p>
+                <h4>— Marie K. <br> <i class="fas fa-user-circle"></i></h4>
+            </div>
+            <div class="slide">
+                <p>"Simple, rapide et efficace. J’ai reçu mon livre en 24h !"</p>
+                <h4>— Alain D. <br> <i class="fas fa-user-circle"></i></h4>
+            </div>
+            <div class="slide">
+                <p>"Une plateforme fiable avec un grand choix de livres de formation."</p>
+                <h4>— Fatima N. <br> <i class="fas fa-user-circle"></i></h4>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="assistance">
+        <div class="wa-me">
+            <a href="#" onclick="event.preventDefault();"> <img src="src/assets/fac.jpg" alt=""></a>
+            <a href="#" onclick="event.preventDefault();"> <img src="src/assets/mee.jpg" alt=""></a>
+        </div>
+        <img src="src/assets/wa-me.jpeg" alt="" class="img-wa-me" title="Assistance">
+    </div>
+
+
+    <div class="num-panier2"><p>0</p></div>
+    <a href="#" onclick="event.preventDefault();">
+        <div class="achat toggleCartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </a>
+
+    <footer>
+        <div class="flou">
+            <div class="content">
+                <a href="#"><img src="src/assets/FB_IMG_1749970979564.jpg" alt="" class="logo"></a>
+                <p>Explorez notre sélection de produits numériques de haute qualité. Boostez votre créativité avec nos contenus digitaux. Votre succès commence ici.</p>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">polique de cookies</a></li>
+                    <li><a href="#">politique de confidentialité</a></li>
+                    <li><a href="#">Condistion générale de vente </a></li>
+                    <li><a href="#">politique de rembourssement</a></li>
+                    <li><a href="#">à propos</a></li>
+                </ul>
+                <div class="elements">
+                    <div class="imgs">
+                        <img src="src/assets/Orange.png" alt="">
+                        <img src="src/assets/MTN.png" alt="">
+                        <img src="src/assets/MasterCard.png" alt="">
+                        <img src="src/assets/Visa.png" alt="">
+                        <img src="src/assets/Wave.png" alt="">
+                        <img src="src/assets/Moov.png" alt="">
+                    </div>
+                    <p>copiright © 2025-2026 <strong>Gift Market place</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartContainer">
+        <h2><i class="fas fa-shopping-bag"></i> Mon Panier</h2>
+        <ul id="cart"></ul>
+        <p id="total"></p>
+        <p class="payer"><a href="#" onclick="event.preventDefault();">Payer maintenant</a></p>
+        <div class="div toggleCartBtn"></div>
+    </div>
+
+
+
+
+
+    <!-- modal container -->
+     <div class="modal-overlay" id="modal-overlay" ></div>
+     <div class="modal-container" id="modal-container">
+        <h1>Formation en micrisoft-365</h1>
+        <div class="image-cart">
+            <img src="src/assets/img_3535.jpeg" alt="vue avant du livre">
+            <img src="src/assets/img_3535.jpeg" alt="vue arriere du livre">
+        </div>
+        <h2>Ce que vous béneficiez en choisissannt ce livre </h2>
+        <p><strong>Une formation de qualité :</strong> Ce livre est constitué de 12 chapritres indépendants qui te permettrons de de boostez tes compentences dans l'utilisation des technologies office 365.
+        Ce livre vous fournit une formation progréssive et complète allant de d'un niveau zéro, Avec ce livre vous avez acces à tout les sécrets d'office 365, au ressorti de cette formation, la burreautique n'aurra plus de secrets pour vous </p>
+        <p><strong>Pourquoi suivre une formation en Office 365 :</strong> En suivant cette formation, vous avez un atout solide pour offre d'mploie du spectre de la burreaucratie.
+        Et vous detenez entre les mains un un appuis solide pour vous faire recruter, Avec ce livre vous avez acces à tout les sécrets d'office 365, au ressorti de cette formation, la burreautique n'aurra plus de secrets pour vous </p>
+        <p><strong>Prix compétitif</strong> Obtenez une formation de qualité en Office 365 à 600 FCFA, un prix bien inférieur à ceux de nos concurrant. Une occasion exceptionnelle à ne pas manquer pour économiser tout en accédant à la meilleur qualités de formation Office 365  </p>
+        <p class="buy-button" onclick="addToCart('Livre Office 365 Pro', 5500)"> <a href="#" onclick="event.preventDefault();">Ajouter au panier </a></p>
+    </div>
+    <script src="src/scripts/animation-text.js"></script>
+</body>
+</html>

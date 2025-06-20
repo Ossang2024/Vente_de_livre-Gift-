@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Estonia&family=Faculty+Glyphic&family=Gothic+A1&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 40px;
+    box-shadow: 0 8px 13px rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 3;
+    background-color: white;
+    height: 80px;
+}
+
+header .logo img{
+    height: 70px;    
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+header .nav ul li a {
+    color: rgb(6,33,61);
+    text-decoration: none;
+    position: relative;
+}
+
+
+header .nav .aa::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgb(39,112,118);
+  transition: width 0.3s ease;
+}
+
+header .nav .aa:hover::after {
+  width: 100%;
+}
+
+header .nav .active {
+    color: rgb(39,112,118);
+}
+
+header .nav .panier {
+    padding: 10px 20px;
+    background-color: rgb(39,112,118);
+    color: white;
+    border: 1px solid rgb(204,204,204);
+    transition: ease-in-out 0.3s;
+}
+
+header .nav .panier:hover {
+    background-color: white;
+    color: rgb(39,112,118);
+}
+
+header .num-panier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(255,46,29);
+    position: fixed;
+    top: 25px;
+    right: 36px;
+    font-size: 10px;
+}
+
+
+
+
+
+.section1 {
+    background: fixed;
+    background-image: url(../assets/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 73vh;
+    margin-top: 80px;
+}
+
+.section1 .flou {
+    background-color: rgba(0,0,0,0.8);
+    height: 73vh;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.section1 .flou .content {
+    border: 1px solid rgb(204,204,204);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.section1 .flou .content h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.section1 .flou .content h1 i {
+    font-size: 65px;
+}
+
+.section1 .flou .content p {
+    font-weight: 600;
+}
+
+
+.contact {
+    padding: 50px;
+    padding-top: 0px;
+}
+
+.contact form {
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+} 
+
+.contact form input {
+    font-size: 15px;
+    border: solid 1px rgb(39,112,118);
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 30px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.contact form input, textarea::placeholder {
+    color: rgb(6,33,61);
+}
+
+.contact form input, textarea:focus {
+    outline: none;
+}
+
+.contact form textarea {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: solid 1px rgb(39,112,118);
+}
+
+.contact form textarea::placeholder {
+    color: rgb(6,33,61);
+}
+
+.contact form button {
+    background-color: rgb(39,112,118);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    min-height: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.assistance {
+    position: fixed;
+    z-index: 10;
+    height: 40px;
+    width: 40px;
+    bottom: 50px;
+    left: 30px;
+}
+
+.assistance .wa-me {
+    display: none;
+}
+
+.assistance img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 8px 13px rgba(0,0,0,0.2);
+    transition: ease;
+    cursor: pointer;
+}
+
+.assistance:hover .wa-me {
+    display: block;
+}
+
+/* Animation pour les images de la div assistance */
+.assistance img {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+.assistance .img-wa-me {
+    animation-delay: 0.2s;
+}
+
+.assistance .wa-me img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.assistance .wa-me img:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.achat {
+    position: fixed;
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    bottom: 45px;
+    right: 30px;
+    border-radius: 100%;
+    background-color: rgba(39, 111, 118, 0.666);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.num-panier2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(255,46,29);
+    position: fixed;
+    bottom: 75px;
+    right: 37px;
+    font-size: 10px;
+    z-index: 15;
+}
+
+
+
+footer {
+    background: fixed;
+    background-image: url(../assets/bg7.jpg);
+    background-position: center;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+footer .flou {
+    width: 100%;
+    max-height: 100vh;
+    background-color: rgba(39, 111, 118, 0.807);
+    overflow: hidden;
+    padding: 40px 50px;
+}
+
+footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(204,204,204);
+    gap: 30px;
+}
+
+footer .logo {
+    height: 90px;
+    width: 150px;
+}
+
+footer .content p {
+    text-align: center;
+    color: white;
+}
+
+footer .content ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer .content ul a {
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+footer .content ul a:hover {
+    color: rgb(6,33,61);
+}
+
+footer .elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .elements .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 250px;
+}
+
+footer .elements .imgs img {
+    height: 20px;
+}
+
+
+
+
+#cartContainer {
+  opacity: 0;
+  transform: translateY(-30px);
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(.4,2,.6,1), transform 0.4s cubic-bezier(.4,2,.6,1);
+  z-index: 1000;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  background: rgb(195,198,209);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  padding: 32px 24px 24px 24px;
+  min-width: 320px;
+  max-width: 95vw;
+  max-height: 80vh;
+  /* overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Quand le panier est visible */
+#cartContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+#cartContainer h2 {
+    color: rgb(39,112,118);
+    text-align: center;
+}
+
+
+#cartContainer button {
+    border: none;
+    background-color: transparent;
+    color: rgb(255,46,29);
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#cartContainer li {
+    font-size: 15px;
+    margin-left: 20px;
+    list-style: none;
+    color: rgb(6,33,61);
+    text-align: center;
+}
+
+#total {
+    font-size: 15px;
+    list-style: none;
+    color: rgb(6,33,61);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.payer {
+    width: 100%;
+    text-align: center;
+}
+
+.payer a {
+    background-color: rgb(39,112,118);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* menu responsive */
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: rgb(39,112,118);
+  display: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+.navi ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navi ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+
+.navi ul li a:hover {
+  color: rgba(0,0,0,0.2);
+}
+
+.navi ul li .submenu {
+  display: none;
+  flex-direction: column;
+  position: static;
+  margin-top: 5px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 10px;
+}
+
+.navi ul li .submenu li a {
+  padding: 5px 10px;
+  display: block;
+  color: rgb(6,33,61);
+  transition: ease-in-out 0.5s;
+}
+
+.navi ul li .submenu li a:hover {
+  color: rgba(0,0,0,0.2);
+}
+
+
+.accordion.open > .submenu {
+  display: flex;
+  max-height: 500px; /* valeur large pour supporter plusieurs éléments */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    background: rgb(39,112,118);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
