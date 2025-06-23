@@ -396,7 +396,8 @@ footer {
     background-image: url(../assets/bg7.jpg);
     background-position: center;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 footer .flou {
@@ -412,7 +413,7 @@ footer .content {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 50px;
+    padding: 20px 20px;
     border-radius: 5px;
     border: 1px solid rgb(204,204,204);
     gap: 30px;
@@ -815,11 +816,11 @@ footer .elements .imgs img {
     }
 
     .typewriter-container {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .background-slider .content .type p{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .background-slider {
@@ -831,7 +832,24 @@ footer .elements .imgs img {
     }
 
     .background-slider .content h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+
+    .background-slider .all {
+        padding: 30px 0px;
+    }
+
+    .background-slider .content .type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recherche input{
+        margin: 0px 50px;
+    }
+
+    footer ul li {
+        text-align: center;
     }
 
 }

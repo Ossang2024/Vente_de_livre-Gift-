@@ -107,7 +107,7 @@ header .num-panier {
 .background-slider .all {
     position: relative;
     max-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.825);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     top: 0px;
     padding: 40px 50px 80px 50px;
@@ -401,7 +401,8 @@ footer {
     background-image: url(../assets/bg7.jpg);
     background-position: center;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 footer .flou {
@@ -647,28 +648,28 @@ footer .elements .imgs img {
         display: none;
     }
 
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .navi {
-    display: none;
-    width: 100%;
-    background: rgb(39,112,118);
-    position: fixed;
-    top: 80px;
-    left: 0;
-    padding: 10px 0;
-    z-index: 90;
-  }
+    .navi {
+        display: none;
+        width: 100%;
+        background: rgb(39,112,118);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 90;
+    }
 
-  .navi.open {
-    display: block;
-  }
+    .navi.open {
+        display: block;
+    }
 
-  .boutique .head {
-    justify-content: center;
-  }
+    .boutique .head {
+        justify-content: center;
+    }
 
 
   .boutique .boutique-slogan {
@@ -688,11 +689,11 @@ footer .elements .imgs img {
     }
 
     .typewriter-container {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .background-slider .content .type p{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .background-slider {
@@ -704,8 +705,28 @@ footer .elements .imgs img {
     }
 
     .background-slider .content h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+
+    .background-slider .all {
+        padding: 30px 0px;
+    }
+
+    .background-slider .content .type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recherche input{
+        margin: 0px 50px;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+    footer .imgs{
+        margin: 0px;
     }
 
 }
-

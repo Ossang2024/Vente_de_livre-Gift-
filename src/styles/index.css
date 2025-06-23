@@ -92,7 +92,7 @@ header .num-panier {
   position: relative;
   top: 80px;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   animation: bgSlider 30s infinite ease-in-out;
@@ -103,7 +103,7 @@ header .num-panier {
 
 .background-slider .all {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.595);
     width: 100%;
     top: 0px;
@@ -123,7 +123,7 @@ header .num-panier {
     border: solid 1px rgb(204,204,204);
     padding: 30px;
     gap: 30px;
-    min-height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -175,7 +175,7 @@ header .num-panier {
 }
 
 .background-slider .content p .store-link {
-    color: rgb(221,86,12);
+    color: rgb(39,112,118);
     text-decoration: none;
     font-weight: 500;
     background-color: rgb(204,204,204);
@@ -329,6 +329,7 @@ header .num-panier {
     color: white;
     font-size: 30px;
     font-weight: 500;
+    text-align: center;
 }
 
 
@@ -439,6 +440,7 @@ header .num-panier {
     text-align: center;
     margin: 20px 10px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .boutique .voire a{
@@ -500,6 +502,7 @@ header .num-panier {
     .slider-track {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      padding: 20px;
       /* width: 90%; */
     }
 
@@ -654,6 +657,7 @@ footer .flou {
     overflow: hidden;
     padding: 40px 50px;
 }
+
 
 footer .content {
     display: flex;
@@ -1010,35 +1014,34 @@ footer .elements .imgs img {
         display: none;
     }
 
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .navi {
-    display: none;
-    width: 100%;
-    background: rgb(39,112,118);
-    position: fixed;
-    top: 80px;
-    left: 0;
-    padding: 10px 0;
-    z-index: 90;
-  }
+    .navi {
+        display: none;
+        width: 100%;
+        background: rgb(39,112,118);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 90;
+    }
 
-  .navi.open {
-    display: block;
-  }
+    .navi.open {
+        display: block;
+    }
 
 
-
-  .boutique .boutique-slogan {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: rgb(6,33,61);
-    margin-bottom: 50px;
-    text-align: center;
-    flex-direction: column;
+    .boutique .boutique-slogan {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgb(6,33,61);
+        margin-bottom: 50px;
+        text-align: center;
+        flex-direction: column;
     }
 
     .boutique .boutique-slogan div {
@@ -1050,5 +1053,29 @@ footer .elements .imgs img {
     .modal-container p {
         text-align: center;
     }
+
+    .background-slider .content {
+        padding: 20px;
+    }
+
+    footer .Flou {
+        padding: 40px 0px;
+        /* max-height: 100vh; */
+    }
+
+    footer .content {
+        padding: 20px 10px;
+        /* max-height: 100vh; */
+    }
+
+    .modal-container {
+        width: 85%;
+    }
+
+    .modal-container h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
 
 }
